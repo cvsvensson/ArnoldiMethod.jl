@@ -500,7 +500,7 @@ function local_schurfact!(
     # iteration count
     iter = 0
 
-    @inbounds while true
+    @inbounds while to > start
         iter += 1
         iter > maxiter && return false
 
